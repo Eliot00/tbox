@@ -31,7 +31,7 @@
 #       include "impl/x86/memset.c"
 #   elif defined(TB_ARCH_x64)
 #       include "impl/x86/memset.c"
-#   elif defined(TB_ARCH_ARM)
+#   elif defined(TB_ARCH_ARM) && !defined(TB_ARCH_ARM64)
 #       include "impl/arm/memset.c"
 #   elif defined(TB_ARCH_SH4)
 #       include "impl/sh4/memset.c"

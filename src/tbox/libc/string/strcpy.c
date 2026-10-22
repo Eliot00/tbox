@@ -28,7 +28,7 @@
 #ifndef TB_CONFIG_LIBC_HAVE_STRCPY
 #   if defined(TB_ARCH_x86)
 #       include "impl/x86/strcpy.c"
-#   elif defined(TB_ARCH_ARM)
+#   elif defined(TB_ARCH_ARM) && !defined(TB_ARCH_ARM64)
 #       include "impl/arm/strcpy.c"
 #   elif defined(TB_ARCH_SH4)
 #       include "impl/sh4/strcpy.c"
